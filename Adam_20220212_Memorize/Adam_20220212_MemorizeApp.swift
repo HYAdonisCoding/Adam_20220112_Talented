@@ -13,7 +13,7 @@ struct Adam_20220212_MemorizeApp: App {
 
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            CardView()
                 .environment(\.managedObjectContext, persistenceController.container.viewContext)
         }
     }
