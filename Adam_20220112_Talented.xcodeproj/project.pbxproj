@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		660BFEE427BA497300D2F311 /* Adam_20220212_MemorizeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 660BFEE327BA497300D2F311 /* Adam_20220212_MemorizeApp.swift */; };
+		660BFEE627BA497300D2F311 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 660BFEE527BA497300D2F311 /* ContentView.swift */; };
+		660BFEE827BA497600D2F311 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 660BFEE727BA497600D2F311 /* Assets.xcassets */; };
+		660BFEEB27BA497600D2F311 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 660BFEEA27BA497600D2F311 /* Preview Assets.xcassets */; };
+		660BFEED27BA497600D2F311 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 660BFEEC27BA497600D2F311 /* Persistence.swift */; };
+		660BFEF027BA497600D2F311 /* Adam_20220212_Memorize.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 660BFEEE27BA497600D2F311 /* Adam_20220212_Memorize.xcdatamodeld */; };
 		6667CF7B27917E6F002B9265 /* CalculatorMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6667CF7A27917E6F002B9265 /* CalculatorMainView.swift */; };
 		668D628D278EBE1D002CC0AA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 668D628C278EBE1D002CC0AA /* AppDelegate.swift */; };
 		668D628F278EBE1D002CC0AA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 668D628E278EBE1D002CC0AA /* SceneDelegate.swift */; };
@@ -37,6 +43,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		660BFEE127BA497300D2F311 /* Memorize.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Memorize.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		660BFEE327BA497300D2F311 /* Adam_20220212_MemorizeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Adam_20220212_MemorizeApp.swift; sourceTree = "<group>"; };
+		660BFEE527BA497300D2F311 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		660BFEE727BA497600D2F311 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		660BFEEA27BA497600D2F311 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		660BFEEC27BA497600D2F311 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		660BFEEF27BA497600D2F311 /* Adam_20220212_Memorize.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Adam_20220212_Memorize.xcdatamodel; sourceTree = "<group>"; };
 		6667CF7A27917E6F002B9265 /* CalculatorMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorMainView.swift; sourceTree = "<group>"; };
 		668D6289278EBE1D002CC0AA /* Adam_20220112_Talented.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Adam_20220112_Talented.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		668D628C278EBE1D002CC0AA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -54,6 +67,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		660BFEDE27BA497300D2F311 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		668D6286278EBE1D002CC0AA /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -78,12 +98,34 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		660BFEE227BA497300D2F311 /* Adam_20220212_Memorize */ = {
+			isa = PBXGroup;
+			children = (
+				660BFEE327BA497300D2F311 /* Adam_20220212_MemorizeApp.swift */,
+				660BFEE527BA497300D2F311 /* ContentView.swift */,
+				660BFEE727BA497600D2F311 /* Assets.xcassets */,
+				660BFEEC27BA497600D2F311 /* Persistence.swift */,
+				660BFEEE27BA497600D2F311 /* Adam_20220212_Memorize.xcdatamodeld */,
+				660BFEE927BA497600D2F311 /* Preview Content */,
+			);
+			path = Adam_20220212_Memorize;
+			sourceTree = "<group>";
+		};
+		660BFEE927BA497600D2F311 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				660BFEEA27BA497600D2F311 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
 		668D6280278EBE1D002CC0AA = {
 			isa = PBXGroup;
 			children = (
 				668D628B278EBE1D002CC0AA /* Adam_20220112_Talented */,
 				668D62A5278EBE22002CC0AA /* Adam_20220112_TalentedTests */,
 				668D62AF278EBE22002CC0AA /* Adam_20220112_TalentedUITests */,
+				660BFEE227BA497300D2F311 /* Adam_20220212_Memorize */,
 				668D628A278EBE1D002CC0AA /* Products */,
 			);
 			sourceTree = "<group>";
@@ -94,6 +136,7 @@
 				668D6289278EBE1D002CC0AA /* Adam_20220112_Talented.app */,
 				668D62A2278EBE22002CC0AA /* Adam_20220112_TalentedTests.xctest */,
 				668D62AC278EBE22002CC0AA /* Adam_20220112_TalentedUITests.xctest */,
+				660BFEE127BA497300D2F311 /* Memorize.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -133,6 +176,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		660BFEE027BA497300D2F311 /* Adam_20220212_Memorize */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 660BFEF327BA497600D2F311 /* Build configuration list for PBXNativeTarget "Adam_20220212_Memorize" */;
+			buildPhases = (
+				660BFEDD27BA497300D2F311 /* Sources */,
+				660BFEDE27BA497300D2F311 /* Frameworks */,
+				660BFEDF27BA497300D2F311 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Adam_20220212_Memorize;
+			productName = Adam_20220212_Memorize;
+			productReference = 660BFEE127BA497300D2F311 /* Memorize.app */;
+			productType = "com.apple.product-type.application";
+		};
 		668D6288278EBE1D002CC0AA /* Adam_20220112_Talented */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 668D62B6278EBE22002CC0AA /* Build configuration list for PBXNativeTarget "Adam_20220112_Talented" */;
@@ -196,6 +256,9 @@
 				LastSwiftUpdateCheck = 1320;
 				LastUpgradeCheck = 1320;
 				TargetAttributes = {
+					660BFEE027BA497300D2F311 = {
+						CreatedOnToolsVersion = 13.2;
+					};
 					668D6288278EBE1D002CC0AA = {
 						CreatedOnToolsVersion = 13.2;
 					};
@@ -225,11 +288,21 @@
 				668D6288278EBE1D002CC0AA /* Adam_20220112_Talented */,
 				668D62A1278EBE22002CC0AA /* Adam_20220112_TalentedTests */,
 				668D62AB278EBE22002CC0AA /* Adam_20220112_TalentedUITests */,
+				660BFEE027BA497300D2F311 /* Adam_20220212_Memorize */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		660BFEDF27BA497300D2F311 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				660BFEEB27BA497600D2F311 /* Preview Assets.xcassets in Resources */,
+				660BFEE827BA497600D2F311 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		668D6287278EBE1D002CC0AA /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -256,6 +329,17 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		660BFEDD27BA497300D2F311 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				660BFEED27BA497600D2F311 /* Persistence.swift in Sources */,
+				660BFEE627BA497300D2F311 /* ContentView.swift in Sources */,
+				660BFEE427BA497300D2F311 /* Adam_20220212_MemorizeApp.swift in Sources */,
+				660BFEF027BA497600D2F311 /* Adam_20220212_Memorize.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		668D6285278EBE1D002CC0AA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -312,6 +396,66 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		660BFEF127BA497600D2F311 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Adam_20220212_Memorize/Preview Content\"";
+				DEVELOPMENT_TEAM = N2KQ965WEJ;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.adam.Adam-20220212-Memorize";
+				PRODUCT_NAME = Memorize;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		660BFEF227BA497600D2F311 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Adam_20220212_Memorize/Preview Content\"";
+				DEVELOPMENT_TEAM = N2KQ965WEJ;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.adam.Adam-20220212-Memorize";
+				PRODUCT_NAME = Memorize;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		668D62B4278EBE22002CC0AA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -563,6 +707,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		660BFEF327BA497600D2F311 /* Build configuration list for PBXNativeTarget "Adam_20220212_Memorize" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				660BFEF127BA497600D2F311 /* Debug */,
+				660BFEF227BA497600D2F311 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		668D6284278EBE1D002CC0AA /* Build configuration list for PBXProject "Adam_20220112_Talented" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -602,6 +755,16 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
+		660BFEEE27BA497600D2F311 /* Adam_20220212_Memorize.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				660BFEEF27BA497600D2F311 /* Adam_20220212_Memorize.xcdatamodel */,
+			);
+			currentVersion = 660BFEEF27BA497600D2F311 /* Adam_20220212_Memorize.xcdatamodel */;
+			path = Adam_20220212_Memorize.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
 		668D6295278EBE1D002CC0AA /* Adam_20220112_Talented.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (

@@ -7,9 +7,30 @@
 
 import SwiftUI
 
+enum BackColor {
+    case black, white, orange
+}
+func color(for color: BackColor) -> Color {
+    switch color {
+    case .black:
+        return Color.black
+    case .white:
+        return Color.white
+    case .orange:
+        return Color.orange
+    }
+    
+}
 struct CalculatorMainView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        Text("+")
+            .font(.title)
+            .foregroundColor(.white)
+            .frame(width: 88, height: 88)
+            .padding()
+            .background(Color.orange)
+            .cornerRadius(44)
+        
     }
 }
 
