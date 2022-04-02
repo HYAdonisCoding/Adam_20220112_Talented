@@ -13,8 +13,18 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         self.view.backgroundColor = .orange
+        
+        // 简写
+        exec(v1: 1, v2: 2, fn: {$0 + $1})
+        exec(v1: 1, v2: 2, fn: +)
     }
 
 
+    func exec(v1: Int, v2: Int, fn: (Int, Int) -> Int) {
+        print(fn(v1, v2))
+    }
+    
+    
+    
 }
 
