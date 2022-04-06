@@ -25,8 +25,9 @@ struct Pie: Shape {
     func path(in rect: CGRect) -> Path {
         let center = CGPoint(x: rect.midX, y: rect.midY)
         let radius = CGFloat((Int(min(rect.width, rect.height)) >> 1))
-        let start = CGPoint(x: center.x + CGFloat(radius * cos(startAngle.radians)),
-                            y: center.y + CGFloat(radius * sin(startAngle.radians))
+        let start = CGPoint(
+            x: center.x + CGFloat(radius * cos(startAngle.radians)),
+            y: center.y + CGFloat(radius * sin(startAngle.radians))
         )
         
         var path = Path()
@@ -37,7 +38,7 @@ struct Pie: Shape {
             radius: radius,
             startAngle: startAngle,
             endAngle: endAngle,
-            clockwise: clockwise
+            clockwise: !clockwise
         )
         path.addLine(to: center)
         return path

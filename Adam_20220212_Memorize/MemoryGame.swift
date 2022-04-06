@@ -30,7 +30,7 @@ struct MemoryGame<CardContent> where CardContent: Equatable {
             }
             
         }
-        print("cards =\n \(cards)")
+//        print("cards =\n \(cards)")
     }
     
     init(numberOfPairsOfCards: Int, createCardContent: (Int) -> CardContent) {
