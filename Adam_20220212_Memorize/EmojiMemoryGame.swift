@@ -13,10 +13,11 @@ import Foundation
 
 
 class EmojiMemoryGame: ObservableObject {
+    typealias Card = MemoryGame<String>.Card
     static let emojis = ["🚲", "🚂", "🚁", "🚜","🚕", "🏎", "🚑", "🚓", "🚒", "✈️", "🚀", "⛵️", "🛸", "🛶", "🚌", "🏍", "🛺", "🚠", "🛵",  "🚗", "🚚", "🚇", "🛻", "🚅",]
     
     static func createMemoryGame() -> MemoryGame<String> {
-        MemoryGame<String>(numberOfPairsOfCards: 3) { index in
+        MemoryGame<String>(numberOfPairsOfCards: 8) { index in
             emojis[index]
         }
     }
@@ -24,12 +25,12 @@ class EmojiMemoryGame: ObservableObject {
     @Published private var model: MemoryGame<String> = createMemoryGame()
     
     
-    var cards: Array<MemoryGame<String>.Card> {
+    var cards: Array<Card> {
         return model.cards
     }
     
     // MARK: - Intent(s)
-    func choose(card: MemoryGame<String>.Card) {
+    func choose(card: Card) {
 //        objectWillChange.send()
         model.choose(card)
         
