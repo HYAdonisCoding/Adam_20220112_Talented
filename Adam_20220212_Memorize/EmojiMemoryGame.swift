@@ -30,10 +30,17 @@ class EmojiMemoryGame: ObservableObject {
     }
     
     // MARK: - Intent(s)
-    func choose(card: Card) {
+    func choose(_ card: Card) {
 //        objectWillChange.send()
         model.choose(card)
         
     }
     
+    func shuffle() {
+        model.shuffle()
+    }
+    
+    func restart() {
+        model = EmojiMemoryGame.createMemoryGame()
+    }
 }
