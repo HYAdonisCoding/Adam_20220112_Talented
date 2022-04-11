@@ -59,12 +59,11 @@ struct EmojiArtDocumentView: View {
     
     private func convertToEmojiCoordinares(_ location: CGPoint, in geometry: GeometryProxy) -> (x: Int, y: Int) {
         let center = geometry.frame(in: .local).center
-        let l = CGPoint(
-            x: (location.x - center.x),
-            y: (location.y - center.y)
+        let location = CGPoint(
+            x: (location.x - panOffset.width - center.x) / zoomScale,
+            y: (location.y - panOffset.height - center.y) / zoomScale
         )
-        print("\(location) , \(l)")
-        return (Int(l.x), Int(l.y))
+        return (Int(location.x), Int(location.y))
     }
     private func convertFromEmojiCoordinares(_ location: (x: Int, y: Int), in geometry: GeometryProxy) -> CGPoint {
         let center = geometry.frame(in: .local).center

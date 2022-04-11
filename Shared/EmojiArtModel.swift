@@ -23,7 +23,7 @@ struct EmojiArtModel {
             self.id = id
             self.text = text
             self.x = x
-            self.y = x
+            self.y = y
             self.size = size
             
         }
