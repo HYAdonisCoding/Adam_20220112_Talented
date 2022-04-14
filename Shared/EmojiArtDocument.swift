@@ -10,16 +10,56 @@ import SwiftUI
 class EmojiArtDocument: ObservableObject {
     @Published private(set) var emojiArt: EmojiArtModel {
         didSet {
+            scheduleAutosave()
             if emojiArt.background != oldValue.background {
                 fetchBackgroundImageDataIfNecessary()
             }
         }
     }
+    private var autosaveTimer: Timer?
     
+    private func scheduleAutosave() {
+        autosaveTimer?.invalidate()
+        autosaveTimer = Timer.scheduledTimer(withTimeInterval: Autosave.coalescingInterval, repeats: false, block: { _ in
+            self.autosave()
+        })
+    }
+    struct Autosave {
+        static let filename = "Autosaved.emojiart"
+        static var url: URL? {
+            let documentDirectory = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first
+            return documentDirectory?.appendingPathComponent(filename)
+        }
+        static let coalescingInterval = 5.0
+    }
+    private func autosave() {
+        if let url = Autosave.url {
+            save(to: url)
+        }
+    }
+    private func save(to url: URL) {
+        let thisFunc = "\(String(describing: self)).\(#function)"
+        
+        do {
+            let data = try emojiArt.json()
+            print("\(thisFunc) json = \(String(data: data, encoding: .utf8) ?? "nil")")
+            try data.write(to: url)
+            print("\(thisFunc) success")
+        } catch let encoding where encoding is EncodingError {
+            print("\(thisFunc) \(url) encoding = \(encoding.localizedDescription)")
+        } catch {
+            print("\(thisFunc) \(url) error = \(error.localizedDescription)")
+        }
+    }
     init() {
-        emojiArt = EmojiArtModel()
-        emojiArt.addEmoji("😀", at: (-200, -100), size: 80)
-        emojiArt.addEmoji("😷", at: (50, 100), size: 40)
+        if let url = Autosave.url, let autosavedEmojiArt = try? EmojiArtModel(url: url) {
+            emojiArt = autosavedEmojiArt
+            fetchBackgroundImageDataIfNecessary()
+        } else {
+            emojiArt = EmojiArtModel()
+        }
+//        emojiArt.addEmoji("😀", at: (-200, -100), size: 80)
+//        emojiArt.addEmoji("😷", at: (50, 100), size: 40)
     }
     
     var emojis: [EmojiArtModel.Emoji] { emojiArt.emojis }
@@ -30,9 +70,10 @@ class EmojiArtDocument: ObservableObject {
     @Published var backgroundImage: UIImage?
     @Published var backgroundImageFetchStatus = BackgroundImageFetchStatus.idle
     
-    enum BackgroundImageFetchStatus {
+    enum BackgroundImageFetchStatus: Equatable {
         case idle
         case fetching
+        case failed(URL) // L12 added
     }
     
     private func fetchBackgroundImageDataIfNecessary() {
@@ -49,6 +90,10 @@ class EmojiArtDocument: ObservableObject {
                         if imageData != nil {
                             self?.backgroundImage = UIImage(data: imageData!)
                             print("new image set")
+                        }
+                        // L12 note failure if we couldn't load background image
+                        if self?.backgroundImage == nil {
+                            self?.backgroundImageFetchStatus = .failed(url)
                         }
                     }
                 }
