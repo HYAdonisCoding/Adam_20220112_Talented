@@ -7,17 +7,17 @@
 		<key>Adam_20220112_Talented.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>1</integer>
+			<integer>0</integer>
 		</dict>
 		<key>Adam_20220212_Memorize.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>0</integer>
+			<integer>2</integer>
 		</dict>
 		<key>Adam_20220407_EmojiArt (iOS).xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>2</integer>
+			<integer>1</integer>
 		</dict>
 		<key>Adam_20220407_EmojiArt (macOS).xcscheme_^#shared#^_</key>
 		<dict>
