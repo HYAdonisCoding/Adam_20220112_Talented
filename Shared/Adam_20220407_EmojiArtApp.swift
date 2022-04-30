@@ -11,12 +11,11 @@ import SwiftUI
 struct Adam_20220407_EmojiArtApp: App {
     let persistenceController = PersistenceController.shared
 
-    @StateObject var document = EmojiArtDocument()
     @StateObject var paletteStore = PaletteStore(named: "Default")
     
     var body: some Scene {
-        WindowGroup {
-            EmojiArtDocumentView(document: document)
+        DocumentGroup(newDocument: { EmojiArtDocument() }) { config in
+            EmojiArtDocumentView(document: config.document)
                 .environmentObject(paletteStore)
                 .environment(\.managedObjectContext, persistenceController.container.viewContext)
         }

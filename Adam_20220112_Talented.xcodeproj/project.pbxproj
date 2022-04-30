@@ -115,6 +115,7 @@
 		668D62AC278EBE22002CC0AA /* Adam_20220112_TalentedUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Adam_20220112_TalentedUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		668D62B0278EBE22002CC0AA /* Adam_20220112_TalentedUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Adam_20220112_TalentedUITests.swift; sourceTree = "<group>"; };
 		668D62B2278EBE22002CC0AA /* Adam_20220112_TalentedUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Adam_20220112_TalentedUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		6691BF60281D496100ED89BD /* Adam-20220407-EmojiArt--iOS--Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Adam-20220407-EmojiArt--iOS--Info.plist"; sourceTree = "<group>"; };
 		669B7BCC27D74A0800AE2E37 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		66E0D7D82802D61700E20DD9 /* EmojiArtModel.Background.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiArtModel.Background.swift; sourceTree = "<group>"; };
 		66E0D7DB2802D77600E20DD9 /* EmojiArtDocument.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiArtDocument.swift; sourceTree = "<group>"; };
@@ -227,6 +228,7 @@
 		668D6280278EBE1D002CC0AA = {
 			isa = PBXGroup;
 			children = (
+				6691BF60281D496100ED89BD /* Adam-20220407-EmojiArt--iOS--Info.plist */,
 				669B7BCC27D74A0800AE2E37 /* README.md */,
 				668D628B278EBE1D002CC0AA /* Adam_20220112_Talented */,
 				668D62A5278EBE22002CC0AA /* Adam_20220112_TalentedTests */,
@@ -680,11 +682,13 @@
 				DEVELOPMENT_TEAM = N2KQ965WEJ;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Adam-20220407-EmojiArt--iOS--Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportsDocumentBrowser = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -710,11 +714,13 @@
 				DEVELOPMENT_TEAM = N2KQ965WEJ;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Adam-20220407-EmojiArt--iOS--Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportsDocumentBrowser = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
